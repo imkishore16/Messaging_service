@@ -7,8 +7,6 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
@@ -17,23 +15,40 @@
             android:id="@+id/phoneNumberEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Recipient's Phone Number"/>
+            android:hint="Recipient's Phone Number" />
 
         <EditText
             android:id="@+id/messageEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/phoneNumberEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Message"/>
+            android:layout_marginTop="31dp"
+            android:hint="Message" />
 
         <Button
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/messageEditText"
-            android:layout_marginTop="16dp"
-            android:text="Send SMS"/>
+            android:layout_marginTop="76dp"
+            android:text="Send SMS" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="126dp"
+            android:text="Start Service" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startButton"
+            android:layout_marginTop="148dp"
+            android:text="Stop Service" />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

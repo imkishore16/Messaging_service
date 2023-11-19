@@ -12,7 +12,9 @@ public class RunningApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)  // o for oreo :)
+        {
+//            creating the notification
             NotificationChannel channel = new NotificationChannel(
                     "running_channel",
                     "Running Notifications",
